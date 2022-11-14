@@ -6,7 +6,7 @@ var updateCallback = function(data){
     console.log("line : "+line);
     var movieName = line.text;
     if (line.source.toLowerCase()==="visitor"){
-    var url = https://www.omdbapi.com?t="+movieName+"&apikey=e8702c16";
+    var url = "https://www.omdbapi.com?t="+movieName+"&apikey=e8702c16";
     
    
     
@@ -43,4 +43,3 @@ var updateCallback = function(data){
     
     lpTag.agentSDK.init({});
     lpTag.agentSDK.bind(chatText, updateCallback, notifyWhenDone);
-
